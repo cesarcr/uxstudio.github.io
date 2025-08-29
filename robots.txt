@@ -1,0 +1,6 @@
+
+User-agent: *
+Allow: /
+Sitemap: https://www.ejemplo.com/sitemap.xml
+# Bloquee rutas sensibles si aplica
+Disallow: /admin/

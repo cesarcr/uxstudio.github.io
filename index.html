@@ -1,0 +1,527 @@
+
+<!doctype html>
+<html lang="es" class="h-100">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UXStudio | Diseño UX/UI, Apps y Sitios Web</title>
+  <meta name="description" content="Transforme su experiencia digital con UXStudio: diseño UX/UI, apps, eCommerce y optimización de conversión. Enfoque mobile-first, performance y SEO.">
+  <meta name="author" content="UXStudio">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://www.ejemplo.com/">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="UXStudio | Diseño UX/UI, Apps y Sitios Web">
+  <meta property="og:description" content="Diseño UX experto, mobile-first con performance, SEO y PWA.">
+  <meta property="og:image" content="assets/img/hero.jpg">
+  <meta property="og:locale" content="es_MX">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="UXStudio | Diseño UX/UI, Apps y Sitios Web">
+  <meta name="twitter:description" content="Diseño UX experto, mobile-first con performance, SEO y PWA.">
+  <meta name="twitter:image" content="assets/img/hero.jpg">
+  <meta name="theme-color" content="#5b3df5">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/icons/icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!-- Google Fonts: Lato 400/700 -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Font Awesome Free 6.7 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet" referrerpolicy="no-referrer">
+  <!-- Custom -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/css/uxstudio.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <!-- Skip link -->
+  <a class="visually-hidden-focusable" href="#contenido">Saltar al contenido</a>
+
+  <!-- Header / Nav -->
+  <header class="navbar navbar-expand-lg bg-white shadow-sm sticky-top" aria-label="Principal">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#" aria-label="UXStudio - Inicio">
+        
+        <span class="brand-text logo">UXStudio</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <nav id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proceso">Proceso</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#precios">Precios</a></li>
+          <li class="nav-item"><a class="btn btn-primary ms-lg-2 btn-movil" href="#contacto">Póngase en contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="flex-grow-1">
+
+    <!-- Hero con Parallax -->
+    <section class="hero position-relative overflow-hidden" data-parallax data-speed="0.4" aria-labelledby="hero-title">
+      <div class="hero-overlay"></div>
+      <div class="container position-relative text-white py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-lg-7">
+            <h1 id="hero-title" class="display-5 fw-bold">Transforme su experiencia digital con un diseño de UX experto</h1>
+            <p class="lead pt-3">Creamos experiencias web centradas en el usuario que impulsan el compromiso para aumentar las conversiones, sitios rápidos, accesibles y con SEO técnico listo para competir.</p>
+            <div class="d-flex flex-wrap gap-3 pt-2">
+              <a href="#contacto" class="btn btn-light btn-lg">Solicitar presupuesto</a>
+              <a href="#servicios" class="btn btn-outline-light btn-lg">Conozca más</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 d-none d-lg-block">
+            <div class="hero-mockup rounded-4 shadow-lg">
+              <img src="assets/img/cabecera.png" alt="Equipo de UX trabajando con tablet y laptop" class="w-100 h-100 object-fit-cover rounded-4" loading="lazy" width="960" height="720">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust icons -->
+    <section class="py-4 bg-white">
+      <p class="text-center">Con las tecnologias más actuales del mercado, garantizamos soluciones de alta calidad.</p>
+      <div class="container text-center small text-muted">
+        <div class="d-flex justify-content-center flex-wrap gap-4">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true" style="font-size: 30px;"></i>
+          <i class="fa-brands fa-html5" aria-hidden="true" style="font-size: 30px;"></i>
+          <i class="fa-brands fa-css3" aria-hidden="true" style="font-size: 30px;"></i>
+          <i class="fa-brands fa-js" aria-hidden="true" style="font-size: 30px;"></i>
+          <i class="fa-brands fa-php" aria-hidden="true" style="font-size: 30px;"></i>
+          <i class="fa-brands fa-node" aria-hidden="true" style="font-size: 30px;"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="section-padding bg-light">
+      <div class="container">
+        <header class="text-center mb-5">
+          <h2 class="fw-bold">Nuestros servicios de diseño UX</h2>
+          <p class="text-muted">Ofrecemos soluciones de extremo a extremo: research, UX/UI, apps móviles y sitios web con foco en velocidad, accesibilidad y SEO.</p>
+        </header>
+
+        <div class="row g-4">
+          <!-- Card -->
+          <article class="col-12 col-md-6 col-lg-4">
+            <div class="service-card h-100 p-4 shadow-sm rounded-4 bg-white">
+              <div class="icon-badge mb-3"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+              <h3 class="h5">Investigación UX</h3>
+              <p class="mb-3">Entendemos a sus usuarios con técnicas cualitativas y cuantitativas para detectar oportunidades.</p>
+              <ul class="list-unstyled small text-muted">
+                <li><i class="fa-regular fa-circle-check me-2"></i>Entrevistas & pruebas</li>
+                <li><i class="fa-regular fa-circle-check me-2"></i>Mapas de viaje</li>
+                <li><i class="fa-regular fa-circle-check me-2"></i>Métricas & analítica</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-4">
+            <div class="service-card h-100 p-4 shadow-sm rounded-4 bg-white">
+              <div class="icon-badge mb-3"><i class="fa-solid fa-palette"></i></div>
+              <h3 class="h5">Diseño UI/UX</h3>
+              <p class="mb-3">Diseñamos interfaces modernas, consistentes y accesibles que impulsan la conversión.</p>
+              <ul class="list-unstyled small text-muted">
+                <li><i class="fa-regular fa-circle-check me-2"></i>Design system</li>
+                <li><i class="fa-regular fa-circle-check me-2"></i>Prototipos interactivos</li>
+                <li><i class="fa-regular fa-circle-check me-2"></i>Accesibilidad</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-4">
+            <div class="service-card h-100 p-4 shadow-sm rounded-4 bg-white">
+              <div class="icon-badge mb-3"><i class="fa-solid fa-mobile-screen"></i></div>
+              <h3 class="h5">Apps & Sitios</h3>
+              <p class="mb-3">Desarrollo web y móvil con performance alto y PWA para una experiencia similar a app.</p>
+              <ul class="list-unstyled small text-muted">
+                <li><i class="fa-regular fa-circle-check me-2"></i>Next.js / PHP</li>
+                <li><i class="fa-regular fa-circle-check me-2"></i>eCommerce</li>
+                <li><i class="fa-regular fa-circle-check me-2"></i>Optimización Core Web Vitals</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-4">
+            <div class="service-card h-100 p-4 shadow-sm rounded-4 bg-white">
+              <div class="icon-badge mb-3"><i class="fa-solid fa-code"></i></div>
+              <h3 class="h5">Desarrollo Web</h3>
+              <p class="mb-3">Transformamos diseños en sitios web completamente funcionales con código limpio y rendimiento óptimo.</p>
+              <ul class="list-unstyled small text-muted">
+                <li><i class="fa-regular fa-circle-check me-2"></i>Desarrollo Frontend</li>
+                <li><i class="fa-regular fa-circle-check me-2"></i>Integración de CMS</li>
+                <li><i class="fa-regular fa-circle-check me-2"></i>Optimización del rendimiento.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-4">
+            <div class="service-card h-100 p-4 shadow-sm rounded-4 bg-white">
+              <div class="icon-badge mb-3"><i class="fa-brands fa-ubuntu"></i></div>
+              <h3 class="h5">Sistemas de diseño</h3>
+              <p class="mb-3">Creamos sistemas de diseño escalables que mantienen la coherencia en todos sus productos digitales y agilizan el desarrollo.</p>
+              <ul class="list-unstyled small text-muted">
+                <li><i class="fa-regular fa-circle-check me-2"></i>Bibliotecas de componentes</li>
+                <li><i class="fa-regular fa-circle-check me-2"></i>Guías de estilo</li>
+                <li><i class="fa-regular fa-circle-check me-2"></i>Documentación</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-4">
+            <div class="service-card h-100 p-4 shadow-sm rounded-4 bg-white">
+              <div class="icon-badge mb-3"><i class="fa-brands fa-wordpress-simple"></i></div>
+              <h3 class="h5">WordPress</h3>
+              <p class="mb-3">Creamos tu sitio WordPress optimizado, rápido y seguro. Tu página web lista en pocos días.</p>
+              <ul class="list-unstyled small text-muted">
+                <li><i class="fa-regular fa-circle-check me-2"></i>Diseño moderno</li>
+                <li><i class="fa-regular fa-circle-check me-2"></i>Adaptado a móviles</li>
+                <li><i class="fa-regular fa-circle-check me-2"></i>SEO básico incluido</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Proceso -->
+    <section id="proceso" class="section-padding">
+      <div class="container">
+        <header class="text-center mb-5">
+          <h2 class="fw-bold">Nuestro proceso de diseño de UX</h2>
+          <p class="text-muted">Seguimos un proceso de diseño probado y centrado en el usuario para crear experiencias digitales que satisfagan tanto las necesidades del usuario como los objetivos comerciales.</p>
+        </header>
+        <div class="row g-4 text-center">
+          <div class="col-6 col-lg-3">
+            <div class="step">
+              <span class="step-number">1</span>
+              <h3 class="h6 mt-3">Descubrir</h3>
+              <p class="small text-muted">Investigamos a sus usuarios, negocios y competencia para comprender el espacio del problema e identificar oportunidades..</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="step">
+              <span class="step-number">2</span>
+              <h3 class="h6 mt-3">Definir</h3>
+              <p class="small text-muted">Sintetizamos los conocimientos de la investigación para definir el problema, crear personas de usuario y establecer requisitos de diseño.</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="step">
+              <span class="step-number">3</span>
+              <h3 class="h6 mt-3">Diseñar</h3>
+              <p class="small text-muted">Creamos wireframes, prototipos y diseños visuales que abordan las necesidades de los usuarios y se alinean con su marca.</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="step">
+              <span class="step-number">4</span>
+              <h3 class="h6 mt-3">Entregar</h3>
+              <p class="small text-muted">Probamos con usuarios reales, refinamos los diseños y entregamos activos listos para la producción para su implementación.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portafolio -->
+    <section id="portafolio" class="section-padding bg-light">
+      <div class="container">
+        <header class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-3">
+          <div>
+            <h2 class="fw-bold">Nuestro trabajo reciente</h2>
+            <p class="text-muted mb-0">Explore nuestra cartera de proyectos exitosos de diseño de UX que han ayudado a las empresas a alcanzar sus objetivos.</p>
+          </div>
+         
+        </header>
+
+        <div class="row g-4">
+          <article class="col-12 col-md-4">
+            <a  class="portfolio-card d-block rounded-4 overflow-hidden shadow-sm" href="https://renovare13.com/" aria-label="Rediseño de sitio" target="_blank">
+              <img class="w-100" width="640" height="400" loading="lazy" src="assets/img/renovare13.jpg" alt="Mockup renovarer 13">
+            </a>
+            <h3 class="h6 mt-3 mb-0">Rediseño del Sitio</h3>
+            <p class="small text-muted">Incremento de conversión y velocidad.</p>
+          </article>
+          <article class="col-12 col-md-4">
+            <a class="portfolio-card d-block rounded-4 overflow-hidden shadow-sm"  aria-label="Aplicación móvil fintech">
+              <img class="w-100" width="640" height="400" loading="lazy" src="assets/img/financeApp.png" alt="Pantallas de app móvil para finanzas">
+            </a>
+            <h3 class="h6 mt-3 mb-0">Fintech App</h3>
+            <p class="small text-muted">Onboarding y biometría segura.</p>
+          </article>
+          <article class="col-12 col-md-4">
+            <a class="portfolio-card d-block rounded-4 overflow-hidden shadow-sm"  aria-label="Plataforma analítica">
+              <img class="w-100" width="640" height="400" loading="lazy" src="assets/img/rediseño-shopease.png" alt="Dashboard con métricas de negocio">
+            </a>
+            <h3 class="h6 mt-3 mb-0">Plataforma Analytics</h3>
+            <p class="small text-muted">Dashboards y self-service BI.</p>
+          </article>
+          <article class="col-12 col-md-4">
+            <a  class="portfolio-card d-block rounded-4 overflow-hidden shadow-sm" href="https://www.gandhi.com.mx/" aria-label="Apoyo en la implementación de mejoras visuales" target="_blank">
+              <img class="w-100" width="640" height="400" loading="lazy" src="assets/img/gandhi.jpg" alt="Apoyo en la implementación de mejoras visuales">
+            </a>
+            <h3 class="h6 mt-3 mb-0">Administracion del sitio</h3>
+            <p class="small text-muted">Apoyo en la implementación de mejoras visuales.</p>
+          </article>
+          <article class="col-12 col-md-4">
+            <a  class="portfolio-card d-block rounded-4 overflow-hidden shadow-sm" href="https://nomicloud.mx/" aria-label="Apoyo en la implementación de mejoras visuales" target="_blank">
+              <img class="w-100" width="640" height="400" loading="lazy" src="assets/img/nomicloud.jpg" alt="Apoyo en la implementación de mejoras visuales">
+            </a>
+            <h3 class="h6 mt-3 mb-0">Sitio Realizado con WordPress</h3>
+            <p class="small text-muted">Apoyo en la implementación de mejoras visuales.</p>
+          </article>
+          <article class="col-12 col-md-4">
+            <a  class="portfolio-card d-block rounded-4 overflow-hidden shadow-sm"  aria-label="Rediseño de sitio" target="_blank">
+              <img class="w-100" width="640" height="400" loading="lazy" src="assets/img/seymeg.jpg" alt="rediseño del sitio">
+            </a>
+            <h3 class="h6 mt-3 mb-0">Rediseño del Sitio en Proceso</h3>
+            <p class="small text-muted">Incremento de conversión y velocidad.</p>
+          </article>
+          <!--<div class="col-md-12 text-center">
+               <a href="#" class="btn btn-outline-primary btn-sm">Ver todos los proyectos</a>
+          </div>-->
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Precios -->
+    <section id="precios" class="section-padding">
+      <div class="container">
+        <header class="text-center mb-5">
+          <h2 class="fw-bold">Precios simples y transparentes</h2>
+          <p class="text-muted">Elija el plan acorde a su proyecto.</p>
+        </header>
+        <div class="row g-4">
+          <div class="col-12 col-lg-4">
+            <div class="price-card h-100 p-4 rounded-4 shadow-sm bg-white">
+              <h3 class="h5">Iniciador</h3>
+              <p class="display-6 fw-bold">$3,000<span class="fs-6 text-muted">/proyecto</span></p>
+              <ul class="list-unstyled small">
+                <li><i class="fa-regular fa-circle-check me-2 text-success"></i>Landing page</li>
+                <li><i class="fa-regular fa-circle-check me-2 text-success"></i>SEO básico</li>
+                <li><i class="fa-regular fa-circle-check me-2 text-success"></i>Entrega 1 semana</li>
+                <li><i class="fa-regular fa-circle-check me-2 text-success"></i>Investigación y estrategia de UX+UI</li>
+                <li><i class="fa-regular fa-circle-check me-2 text-success"></i>Hosting</li>
+                <li><i class="fa-regular fa-circle-check me-2 text-success"></i>Dominio</li>
+                <li><i class="fa-regular fa-circle-check me-2 text-success"></i>Correo de Dominio</li>
+              </ul>
+              <a href="#contacto" class="btn btn-outline-primary w-100">Comenzar</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="price-card h-100 p-4 rounded-4 shadow-lg bg-gradient-primary text-white position-relative">
+              <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-3">Popular</span>
+              <h3 class="h5">Profesional</h3>
+              <p class="display-6 fw-bold">$4,999<span class="fs-6 opacity-75">/proyecto</span></p>
+              <ul class="list-unstyled small">
+                <li><i class="fa-regular fa-circle-check me-2" style="color: #fff;"></i>UX+UI completo</li>
+                <li><i class="fa-regular fa-circle-check me-2" style="color: #fff;"></i>PWA</li>
+                <li><i class="fa-regular fa-circle-check me-2" style="color: #fff;"></i>SEO</li>
+                <li><i class="fa-regular fa-circle-check me-2" style="color: #fff;"></i>5 Páginas</li>
+                <li><i class="fa-regular fa-circle-check me-2" style="color: #fff;"></i>Hosting</li>
+                <li><i class="fa-regular fa-circle-check me-2" style="color: #fff;"></i>Dominio</li>
+                <li><i class="fa-regular fa-circle-check me-2" style="color: #fff;"></i>Correo de Dominio</li>
+              </ul>
+              <a href="#contacto" class="btn btn-light w-100">Cotizar</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="price-card h-100 p-4 rounded-4 shadow-sm bg-white">
+              <h3 class="h5">Empresa</h3>
+              <p class="display-6 fw-bold">$9,999<span class="fs-6 text-muted">+</span></p>
+              <ul class="list-unstyled small">
+                <li><i class="fa-regular fa-circle-check me-2 text-success"></i>Incluye todo lo de profesional</li>
+                <li><i class="fa-regular fa-circle-check me-2 text-success"></i>Soporte dedicado</li>
+                <li><i class="fa-regular fa-circle-check me-2 text-success"></i>Integraciones</li>
+                 <li><i class="fa-regular fa-circle-check me-2 text-success"></i>Desarrollo web con Apis </li>
+                <li><i class="fa-regular fa-circle-check me-2 text-success"></i>PWA</li>
+                <li><i class="fa-regular fa-circle-check me-2 text-success"></i>SEO</li>
+                <li><i class="fa-regular fa-circle-check me-2 text-success"></i>Páginas las que se necesiten</li>
+              </ul>
+              <a href="#contacto" class="btn btn-outline-primary w-100">Contáctenos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <header class="text-center mb-5">
+          <h2 class="fw-bold">Lo que dicen nuestros clientes</h2>
+        </header>
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <figure class="testimonial p-4 bg-white rounded-4 shadow-sm h-100">
+              <blockquote class="mb-3">“Aumentaron nuestras visitas al sitio con un rediseño impecable y rápido.”</blockquote>
+              <figcaption class="small text-muted">Roxona Vilora — Renovare13</figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-4">
+            <figure class="testimonial p-4 bg-white rounded-4 shadow-sm h-100">
+              <blockquote class="mb-3">“Onboarding de app móvil sin fricción. Excelente equipo.”</blockquote>
+              <figcaption class="small text-muted">David Herrera — Fintech</figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-md-4">
+            <figure class="testimonial p-4 bg-white rounded-4 shadow-sm h-100">
+              <blockquote class="mb-3">“Mejoraron nuestros Core Web Vitals en 3 semanas.”</blockquote>
+              <figcaption class="small text-muted">Sara López — Nomicloud</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Parallax -->
+    <section class="cta section-padding text-center text-white position-relative" data-parallax data-speed="0.2">
+      <div class="cta-overlay"></div>
+      <div class="container position-relative">
+        <h2 class="fw-bold">¿Listo para transformar su experiencia digital?</h2>
+        <p class="lead mb-4">Creamos soluciones que deleitan a sus clientes e impulsan el crecimiento.</p>
+        <a href="#contacto" class="btn btn-light btn-lg">Programar una consulta</a>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section-padding">
+      <div class="container">
+        <header class="text-center mb-4">
+          <h2 class="fw-bold">Póngase en contacto</h2>
+          <p class="text-muted">Cuéntenos sobre su proyecto. Responderemos pronto.</p>
+        </header>
+        <div class="row g-4">
+          <!--<div class="col-12 col-lg-7">
+            <form id="contactForm" class="needs-validation" novalidate action="contact.php" method="POST" aria-describedby="form-status">
+              <input type="text" name="company" class="d-none" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre *</label>
+                <input id="nombre" name="nombre" type="text" class="form-control" required placeholder="Su nombre">
+                <div class="invalid-feedback">Ingrese su nombre.</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico *</label>
+                <input id="email" name="email" type="email" class="form-control" required placeholder="nombre@empresa.com">
+                <div class="invalid-feedback">Ingrese un correo válido.</div>
+              </div>
+              <div class="mb-3">
+                <label for="tipo" class="form-label">Tipo de proyecto *</label>
+                <select id="tipo" name="tipo" class="form-select" required>
+                  <option value="" selected disabled>Seleccione una opción</option>
+                  <option value="diseño web">Diseño web</option>
+                  <option value="app">App</option>
+                  <option value="tienda online">Tienda online</option>
+                </select>
+                <div class="invalid-feedback">Seleccione el tipo de proyecto.</div>
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" class="form-control" rows="4" placeholder="Cuéntenos sobre objetivos, plazos, alcance…"></textarea>
+              </div>
+              <div class="d-grid">
+                <button id="btnEnviar" class="btn btn-primary btn-lg" type="submit" disabled>Enviar mensaje</button>
+              </div>
+              <p id="form-status" class="mt-3 small" role="status" aria-live="polite"></p>
+            </form>
+          </div>-->
+          <div class="col-md-12 text-center">
+            <div class="p-4 bg-light rounded-4 h-100 shadow-sm">
+              <h3 class="h6">Información de contacto</h3>
+              <ul class="small mb-4">
+                <li class="align-items-center gap-4 m-2" style="list-style: none;">
+                  <i class="fa-solid fa-envelope"></i> 
+                  <a href="mailto:cruizcassola@gmail.com" class="link-underline link-underline-opacity-0">cruizcassola@gmail.com</a>
+                </li>
+                <li class="align-items-center gap-4" style="list-style: none;">
+                   <p><i class="fa-solid fa-phone"></i> +52 55 32681389</p>
+                </li>
+                <li class="align-items-center gap-4" style="list-style: none;">
+                   <p><i class="fa-solid fa-location-dot"></i> Ciudad de México, MX</p>
+                </li>
+              </ul>
+              <p><!-- Botón flotante de WhatsApp -->
+              <a href="https://wa.me/5215532681389?text=Hola%20CESAR,%20quiero%20saber%20más%20sobre%20los%20precios" 
+                class="whatsapp-float" 
+                target="_blank" 
+                title="Chatea con CESAR por WhatsApp">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+              </a>
+
+              </p>
+              <!--<h3 class="h6">Síganos</h3>
+              <div class="gap-3">
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram fa-lg"></i></a>
+              </div>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white-50 py-4 mt-auto">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center mb-3">
+            <p>Crear experiencias de usuario excepcionales que impulsen el crecimiento del negocio.</p>
+        </div>
+      </div>
+      <div class="row gy-3 align-items-center">
+        <div class="col-md-4 text-center">
+          <div class="d-flex align-items-center gap-2">
+            <span class="brand-text text-white logo">UXStudio</span>
+          </div>
+          <br/>
+          <small class="d-block mt-2">© <span id="year"></span> UXStudio. Todos los derechos reservados.</small>
+        </div>
+        <div class="col-md-4 text-center">
+          <h6 class="text-white">Empresa</h6>
+          <ul class="list-unstyled small">
+            <li><a class="link-light link-underline-opacity-0" href="#servicios">Servicios</a></li>
+            <li><a class="link-light link-underline-opacity-0" href="#proceso">Proceso</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-center">
+          <h6 class="text-white">Soporte</h6>
+          <ul class="list-unstyled small">
+            <li><a class="link-light link-underline-opacity-0" href="#contacto">Contacto</a></li>
+            <!--<li><a class="link-light link-underline-opacity-0" href="robots.txt">Robots</a></li>-->
+          </ul>
+        </div>
+        <!--<div class="col-12 col-lg-4">
+          <form class="d-flex gap-2" onsubmit="event.preventDefault(); alert('Gracias por suscribirse');">
+            <input type="email" class="form-control" placeholder="Su correo">
+            <button class="btn btn-outline-light" type="submit">Suscribirse</button>
+          </form>
+        </div>-->
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+  <!-- App -->
+  <script src="app.js" defer></script>
+</body>
+</html>
