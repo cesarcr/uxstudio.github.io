@@ -1,0 +1,1 @@
+es un sitio web para saber el potencial del seo y saber como se comporta en movil
