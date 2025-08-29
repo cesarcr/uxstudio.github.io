@@ -1,8 +1,9 @@
-
 /* Progressive Enhancement & UX */
 document.addEventListener('DOMContentLoaded', ()=>{
+
   // Año en footer
-  const y = document.getElementById('year'); if(y) y.textContent = new Date().getFullYear();
+  const y = document.getElementById('year'); 
+  if(y) y.textContent = new Date().getFullYear();
 
   // Lazy sizes: (navegadores modernos ya soportan loading=lazy en <img>)
   // Intersección para efectos o futuras mejoras
@@ -19,47 +20,56 @@ document.addEventListener('DOMContentLoaded', ()=>{
   window.addEventListener('scroll', onScroll, {passive:true});
   onScroll();
 
-  // Validación del formulario + habilitar botón
+  // Validación del formulario + habilitar botón (solo si existe)
   const form = document.getElementById('contactForm');
   const btn = document.getElementById('btnEnviar');
   const status = document.getElementById('form-status');
 
-  const validateRequired = () => {
-    if(!form) return;
-    const nombre = form.nombre.value.trim();
-    const email = form.email.value.trim();
-    const tipo = form.tipo.value;
-    const ok = nombre.length > 1 && /.+@.+\..+/.test(email) && !!tipo;
-    btn.disabled = !ok;
-  };
+  if(form && btn && status){
 
-  ['input','change','keyup'].forEach(ev => form.addEventListener(ev, validateRequired, {passive:true}));
-  validateRequired();
+    const validateRequired = () => {
+      const nombre = form.nombre?.value.trim() || "";
+      const email = form.email?.value.trim() || "";
+      const tipo = form.tipo?.value || "";
+      const ok = nombre.length > 1 && /.+@.+\..+/.test(email) && !!tipo;
+      btn.disabled = !ok;
+    };
 
-  form.addEventListener('submit', async (e)=>{
-    e.preventDefault();
-    // Bootstrap validation UI
-    if(!form.checkValidity()){ form.classList.add('was-validated'); return; }
+    ['input','change','keyup'].forEach(ev => 
+      form.addEventListener(ev, validateRequired, {passive:true})
+    );
+    validateRequired();
 
-    btn.disabled = true;
-    status.textContent = 'Enviando…';
+    form.addEventListener('submit', async (e)=>{
+      e.preventDefault();
 
-    try{
-      const fd = new FormData(form);
-      const resp = await fetch(form.action, { method:'POST', body: fd });
-      const data = await resp.json();
-      if(data && data.ok){
-        status.textContent = '¡Gracias! Su mensaje ha sido enviado, pronto lo contactaremos.';
-        form.reset();
-      }else{
-        status.textContent = 'Hubo un error; por favor intente otra vez.';
+      // Bootstrap validation UI
+      if(!form.checkValidity()){ 
+        form.classList.add('was-validated'); 
+        return; 
       }
-    }catch(err){
-      status.textContent = 'Hubo un error; por favor intente otra vez.';
-    }finally{
-      validateRequired();
-    }
-  });
+
+      btn.disabled = true;
+      status.textContent = 'Enviando…';
+
+      try{
+        const fd = new FormData(form);
+        const resp = await fetch(form.action, { method:'POST', body: fd });
+        const data = await resp.json();
+
+        if(data && data.ok){
+          status.textContent = '¡Gracias! Su mensaje ha sido enviado, pronto lo contactaremos.';
+          form.reset();
+        }else{
+          status.textContent = 'Hubo un error; por favor intente otra vez.';
+        }
+      }catch(err){
+        status.textContent = 'Hubo un error; por favor intente otra vez.';
+      }finally{
+        validateRequired();
+      }
+    });
+  }
 
   // Registrar Service Worker
   if('serviceWorker' in navigator){
