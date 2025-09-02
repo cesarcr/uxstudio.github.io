@@ -1,13 +1,14 @@
 
 const CACHE = 'uxstudio-v1';
 const ASSETS = [
-  '/index.html',
-  '/styles.css',
-  '/app.js',
-  '/manifest.json',
-  '/assets/img/hero.jpg',
-  '/assets/icons/icon-192.png',
-  '/assets/icons/icon-512.png',
+  './',
+  './index.html',
+  './styles.css',
+  './app.js',
+  './manifest.json',
+  './assets/img/hero.jpg',
+  './assets/icons/icon-192.png',
+  './assets/icons/icon-512.png',
   // CDNs no se cachean aquí; el navegador lo gestiona.
 ];
 
