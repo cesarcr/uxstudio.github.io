@@ -1,7 +1,10 @@
 /* Progressive Enhancement & UX */
 document.addEventListener('DOMContentLoaded', ()=>{
 
+
   // Año en footer
+  const y = document.getElementById('year'); 
+  if(y) y.textContent = new Date().getFullYear();
   const y = document.getElementById('year'); 
   if(y) y.textContent = new Date().getFullYear();
 
@@ -21,6 +24,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
   const form   = document.getElementById('contactForm');
   const btn    = document.getElementById('btnEnviar');
   const status = document.getElementById('form-status');
+
+  if(form && btn && status){
 
   if(form && btn && status){
 
@@ -46,6 +51,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
         return; 
       }
 
+      btn.disabled = true;
+      status.textContent = 'Enviando…';
       btn.disabled = true;
       status.textContent = 'Enviando…';
 
